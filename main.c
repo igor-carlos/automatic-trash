@@ -153,11 +153,11 @@ void loop() {
 
   if (STDistCm <= distMinToSentMessage || STDistCm >= distMaxToSentMessage) {
     // client.subscribe("grupo04/estadoLixeira")
-    client.publish("grupo04/estadoLixeira", "cheia");
-    Serial.println("Enviou que está cheia");
+    client.publish("grupo04/estadoLixeira", "Aqui já deu, Pode parar !");
+    Serial.println("Aqui já deu, Pode parar !");
   } else {
-    client.publish("grupo04/estadoLixeira", "vazia");
-    Serial.println("Enviou que está vazia");
+    client.publish("grupo04/estadoLixeira", "Aqui está dboa, zero lixo por enquanto !");
+    Serial.println("Aqui está dboa, zero lixo por enquanto !");
   }
 
   delay(500);
